@@ -20,15 +20,33 @@ public class TestDeck {
     }
 
     @Test
+    public void oneCardInDeck() {
+        deck.addCard(card);
+        assertEquals(1, deck.countCardsInDeck());
+    }
+
+    @Test
     public void deckIsFull(){
         deck.fillDeck();
         assertEquals(52, deck.countCardsInDeck());
     }
 
+
     @Test
-    public void oneCardInDeck(){
-        deck.addCard(card);
-        assertEquals(1, deck.countCardsInDeck());
+    public void canShuffleCards(){
+        deck.fillDeck();
+        deck.shuffleDeck();
+        assertEquals(52, deck.countCardsInDeck());
     }
+
+    @Test
+    public void canDealRandomCard(){
+        deck.fillDeck();
+        deck.shuffleDeck();
+        deck.dealCard();
+        assertEquals(51, deck.countCardsInDeck());
+    }
+
+
 
 }

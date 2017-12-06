@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class Deck {
 
@@ -24,6 +25,14 @@ public class Deck {
 //                Why can't we call above method here?
             }
         }
+    }
+
+    public void shuffleDeck() {
+        Collections.shuffle(cards);
+    }
+
+    public Card dealCard(){
+        return this.cards.remove(0);
     }
 
 }
