@@ -19,11 +19,11 @@ public class TestDeck {
         assertEquals(0, deck.countCardsInDeck());
     }
 
-//    @Test
-//    public void deckIsFull(){
-//        deck.addCards();
-//        assertEquals(15, deck.countCardsInDeck());
-//    }
+    @Test
+    public void deckIsFull(){
+        deck.fillDeck();
+        assertEquals(52, deck.countCardsInDeck());
+    }
 
     @Test
     public void oneCardInDeck(){
