@@ -8,4 +8,8 @@ public class Card {
         this.suit = suit;
         this.value = value;
     }
+
+    public SuitType getSuit() {
+        return this.suit;
+    }
 }
