@@ -6,15 +6,29 @@ import static org.junit.Assert.assertEquals;
 public class TestDeck {
 
     Deck deck;
+    Card card;
 
     @Before
     public void before(){
         deck = new Deck();
+        card = new Card(SuitType.CLUBS, ValueType.ACE);
     }
 
     @Test
     public void deckIsEmpty(){
         assertEquals(0, deck.countCardsInDeck());
+    }
+
+//    @Test
+//    public void deckIsFull(){
+//        deck.addCards();
+//        assertEquals(15, deck.countCardsInDeck());
+//    }
+
+    @Test
+    public void oneCardInDeck(){
+        deck.addCard(card);
+        assertEquals(1, deck.countCardsInDeck());
     }
 
 }
