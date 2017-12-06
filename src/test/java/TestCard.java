@@ -17,5 +17,10 @@ public class TestCard {
         assertEquals(SuitType.HEARTS, card.getSuit());
     }
 
+    @Test
+    public void hasValueType(){
+        assertEquals(ValueType.JACK, card.getValue());
+    }
+
 
 }
