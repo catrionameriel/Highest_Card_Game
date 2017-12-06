@@ -23,11 +23,12 @@ public class Player {
     }
 
     public int getTotalOfHand(){
-        total = 0;
-        for (Card card : ArrayList<Card>() hand){
-            value = card.getValueFromValueType();
+        int total = 0;
+        for (Card card : hand){
+            int value = card.getValueFromValueType();
             total += value;
         }
+        return total;
     }
 
 }

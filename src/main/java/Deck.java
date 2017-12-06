@@ -22,7 +22,6 @@ public class Deck {
         for (SuitType suit : SuitType.values()) {
             for (ValueType value : ValueType.values()) {
                 this.cards.add(new Card(suit, value));
-//                Why can't we call above method here?
             }
         }
     }

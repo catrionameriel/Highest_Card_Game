@@ -18,6 +18,6 @@ public class Card {
     }
 
     public int getValueFromValueType() {
-        return value.getValueFromEnum();
+        return this.value.getValueFromEnum();
     }
 }

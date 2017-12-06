@@ -27,4 +27,12 @@ public class TestPlayer {
         player1.receivesCard(deck);
         assertEquals(1, player1.countCardsInHand());
     }
+
+    @Test
+    public void playerHandHasValue(){
+        player1.receivesCard(deck);
+        player1.receivesCard(deck);
+        player1.receivesCard(deck);
+        assertEquals(9, player1.getTotalOfHand());
+    }
 }

@@ -26,10 +26,10 @@ public class TestGame {
         assertEquals(2, game.countPlayers());
     }
 
-    @Test
-    public void playerHaSCardWithValue(){
-        game.addPlayer(player1);
-        player1.receivesCard(deck);
-        assertEquals();
-    }
+//    @Test
+//    public void playerHaSCardWithValue(){
+//        game.addPlayer(player1);
+//        player1.receivesCard(deck);
+//        assertEquals();
+//    }
 }
