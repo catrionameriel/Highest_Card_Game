@@ -21,7 +21,13 @@ public class Player {
     public void receivesCard(Deck deck){
         this.hand.add(deck.dealCard());
     }
-    
 
+    public int getTotalOfHand(){
+        total = 0;
+        for (Card card : ArrayList<Card>() hand){
+            value = card.getValueFromValueType();
+            total += value;
+        }
+    }
 
 }
