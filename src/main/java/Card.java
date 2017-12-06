@@ -16,4 +16,8 @@ public class Card {
     public ValueType getValue() {
         return this.value;
     }
+
+    public int getValueFromValueType() {
+        return value.getValueFromEnum();
+    }
 }

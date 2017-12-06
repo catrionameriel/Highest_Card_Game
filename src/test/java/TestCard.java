@@ -22,5 +22,10 @@ public class TestCard {
         assertEquals(ValueType.JACK, card.getValue());
     }
 
+    @Test
+    public void hasValue(){
+        assertEquals(11, card.getValueFromValueType());
+    }
+
 
 }
